@@ -2,47 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header center">
-        <div class="header__left">
-            <a href="" class="logo"><img class="logo__img" src="img/logo.png">BRAND</a>
-            <form class="header__form" action="#">
-                <div class="header__browse">Browse</div>
-                <input type="text">
-                <button><img src="img/search.png" alt=""></button>
-            </form>
-        </div>
-        <div class="header__right">
-            <img class="header__cart" src="img/cart.png" alt="cart">
-            <a href="#" class="button">My Account</a>
-        </div>
-    </div>
-    <div class="nav center">
-        <ul class="menu">
-            <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Women</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Hot</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
-        </ul>
-    </div>
-    <div class="promo center">
-        <div class="promo__content">
-            <h1 class="promo__heading promo__heading_big">THE BRAND</h1>
-            <h2 class="promo__heading">OF LUXERIOUS FASHION</h2>
-        </div>
-    </div>
+	<div class="header center">
+		<div class="header__left">
+			<a href="" class="logo"><img class="logo__img" src="img/logo.png">BRAN<span class="logo__span">D</span></a>
+			<form class="header__form" action="#">
+				<a href="#" class="header__browse">Browse  <i class="arrow-down"></i></a>
+				<input class="header__input" type="text">
+				<button class="header__search"><img src="img/search.png" alt="search"></button>
+			</form>
+		</div>
+		<div class="header__right">
+			<img class="header__cart" src="img/cart.png" alt="cart">
+			<a href="#" class="button">My Account <i class="arrow-down"></i></a>
+		</div>
+	</div>
+	<div class="nav center">
+		<ul class="menu">
+			<li class="menu__list"><a href="#" class="menu__link">Home</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Women</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Hot</a></li>
+			<li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
+		</ul>
+	</div>
+	<div class="promo center">
+		<div class="promo__content">
+			<h1 class="promo__heading promo__heading_big">THE BRAND</h1>
+			<h2 class="promo__heading">OF LUXERIOUS FASHION</h2>
+		</div>
+	</div>
+	<div class="division center">
+		<div class="division__banner division__banner_1">
+			<a href="#"><div class="division__badge">
+				<p class="division__p">HOT DEAL</p>
+				<h3 class="division__h3">FOR MEN</h3>
+			</div>
+		</div>
+		<div class="division__banner division__banner_2">
+			<a href="#"><div class="division__badge">
+				<p class="division__p">30% OFFER</p>
+				<h3 class="division__h3">WOMEN</h3>
+			</div></a>
+		</div>
+		<div class="division__banner division__banner_3">
+			<a href="#"><div class="division__badge">
+				<p class="division__p">LUXIROUS & TRENDY</p>
+				<h3 class="division__h3">ACCESORIES</h3>
+			</div></a>
+		</div>
+		<div class="division__banner division__banner_4">
+			<a href="#"><div class="division__badge">
+				<p class="division__p">NEW ARRIVALS</p>
+				<h3 class="division__h3">FOR KIDS</h3>
+			</div></a>
+		</div>
+	</div>
+	<div class="featured center">
+		<h3 class="featured_h3">Fetured Items</h3>
+		<p class="featured__text">Shop for items based on what we featured in this week</p>
+		<div class="products">
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_1.jpeg" alt="Featured_item_1" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_2.jpeg" alt="Featured_item_2" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_3.jpeg" alt="Featured_item_3" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_4.jpeg" alt="Featured_item_4" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_5.jpeg" alt="Featured_item_5" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_6.jpeg" alt="Featured_item_6" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_7.jpeg" alt="Featured_item_7" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+			<div class="products__item">
+				<div class="products__hover">
+					<img src="img/Featured_item_8.jpeg" alt="Featured_item_8" class="products__img">
+				</div>
+				<p class="products__name">Mango People T-shirt</p>
+				<p class="products__price">$52.00</p>
+			</div>
+		</div>
+		<a href="#" class="button featured__button">Browse All Product <span>→</span></a>
+	</div>
 </body>
 
 </html>
