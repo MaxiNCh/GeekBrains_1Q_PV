@@ -4,11 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Main page</title>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome/css/all.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/f7d160406a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,14 +28,13 @@
 	</header>
 	<nav class="nav center">
 		<ul class="menu">
-			<li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Women</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Hot</a></li>
-			<li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
+			<li><a href="#" class="menu__active menu__link">Home</a></li>
+			<li><a href="./product.html" class="menu__link">Man</a></li>
+			<li><a href="#" class="menu__link">Women</a></li>
+			<li><a href="#" class="menu__link">Kids</a></li>
+			<li><a href="#" class="menu__link">Accoseriese</a></li>
+			<li><a href="#" class="menu__link">Featured</a></li>
+			<li><a href="#" class="menu__link">Hot Deals</a></li>
 		</ul>
 	</nav>
 	<section class="promo center">
@@ -139,7 +138,7 @@
 				<p class="products__price">$52.00</p>
 			</div>
 		</div>
-		<a href="#" class="button featured__button">Browse All Product <span>→</span></a>
+		<a href="#" class="button featured__button">Browse All Product<i class="fas fa-long-arrow-alt-right"></i></a>
 	</section>
 	<section class="offer container">
 		<div class="offer__img">
@@ -173,69 +172,71 @@
 			</div>
 		</div>
 	</section>
-	<section class="subscribe center">
-		<div class="comments">
-			<div class="comments__icon"><img src="img/Bin_Burhan.png" alt=""></div>
-			<div class="blockquote">
-				<p class="blockquote__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-				<p class="blockquote__authoer">Bin Burhan</p>
-				<p class="blockquote__smth">Dhaka, Bd</p>
+	<footer>
+		<section class="subscribe center">
+			<div class="comments">
+				<div class="comments__icon"><img src="img/Bin_Burhan.png" alt=""></div>
+				<div class="blockquote">
+					<p class="blockquote__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+					<p class="blockquote__authoer">Bin Burhan</p>
+					<p class="blockquote__smth">Dhaka, Bd</p>
+				</div>
 			</div>
-		</div>
-		<div class="subscribe__right">
-			<h3 class="subscribe__h3">Subscribe</h3>
-			<p class="subscribe__p"> FOR OUR NEWLETTER AND PROMOTION</p>
-				<form action="#"><input class="subscribe__input" type="email" placeholder="Enter Your Email">
-				<button type="submit" class="button subscribe__button">Subscribe</button>
-			</form>
-		</div>
-	</section>
-	<footer class="site-map center">
-		<div class="site-map__company">
-			<a href="" class="logo"><img class="logo__img" src="img/logo.png">BRAN<span class="logo__span">D</span></a>
-			<p class="site-map__p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
-			 <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-		</div>
-		<nav class="site-map__menu">
-			<h4 class="site-map__h4">COMPANY</h4>
-			<ul class="site-map__ul">
-				<a href="#"><li>Home</li></a>
-				<a href="#"><li>Shop</li></a>
-				<a href="#"><li>About</li></a>
-				<a href="#"><li>How It Works</li></a>
-				<a href="#"><li>Contact</li></a>
-			</ul>
-		</nav>
-		<nav class="site-map__menu">
-			<h4 class="site-map__h4">INFORMATION</h4>
-			<ul class="site-map__ul">
-				<a href="#"><li>Tearms & Condition</li></a>
-				<a href="#"><li>Privacy Policy</li></a>
-				<a href="#"><li>How to Buy</li></a>
-				<a href="#"><li>How to Sell</li></a>
-				<a href="#"><li>Promotion</li></a>
-			</ul>
-		</nav>
-		<nav class="site-map__menu">
-			<h4 class="site-map__h4">SHOP CATEGORY</h4>
-			<ul class="site-map__ul">
-				<a href="#"><li>Men</li></a>
-				<a href="#"><li>Women</li></a>
-				<a href="#"><li>Child</li></a>
-				<a href="#"><li>Apparel</li></a>
-				<a href="#"><li>Brows All</li></a>
-			</ul>
-		</nav>
-	</footer>
-	<footer class="footer center">
-		<p class="footer__p">© 2017 Brand All Rights Reserved.</p>
-		<div class="footer__links">
-			<a href="#"><div class="footer__social"><span class="fab	 fa-facebook-f"></span></div></a>
-			<a href="#"><div class="footer__social"><span class="fab	 fa-twitter"></div></a>
-			<a href="#"><div class="footer__social"><span class="fab	 fa-linkedin-in"></div></a>
-			<a href="#"><div class="footer__social"><span class="fab	 fa-pinterest-p"></div></a>
-			<a href="#"><div class="footer__social"><span class="fab	 fa-google-plus-g"></div></a>
-		</div>
+			<div class="subscribe__right">
+				<h3 class="subscribe__h3">Subscribe</h3>
+				<p class="subscribe__p"> FOR OUR NEWLETTER AND PROMOTION</p>
+					<form action="#"><input class="subscribe__input" type="email" placeholder="Enter Your Email">
+					<button type="submit" class="button subscribe__button">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<section class="site-map center">
+			<div class="site-map__company">
+				<a href="" class="logo"><img class="logo__img" src="img/logo.png">BRAN<span class="logo__span">D</span></a>
+				<p class="site-map__p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+				 <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+			</div>
+			<nav class="site-map__menu">
+				<h4 class="site-map__h4">COMPANY</h4>
+				<ul class="site-map__ul">
+					<a class="site-map__link" href="#"><li>Home</li></a>
+					<a class="site-map__link" href="#"><li>Shop</li></a>
+					<a class="site-map__link" href="#"><li>About</li></a>
+					<a class="site-map__link" href="#"><li>How It Works</li></a>
+					<a class="site-map__link" href="#"><li>Contact</li></a>
+				</ul>
+			</nav>
+			<nav class="site-map__menu">
+				<h4 class="site-map__h4">INFORMATION</h4>
+				<ul class="site-map__ul">
+					<a class="site-map__link" href="#"><li>Tearms & Condition</li></a>
+					<a class="site-map__link" href="#"><li>Privacy Policy</li></a>
+					<a class="site-map__link" href="#"><li>How to Buy</li></a>
+					<a class="site-map__link" href="#"><li>How to Sell</li></a>
+					<a class="site-map__link" href="#"><li>Promotion</li></a>
+				</ul>
+			</nav>
+			<nav class="site-map__menu">
+				<h4 class="site-map__h4">SHOP CATEGORY</h4>
+				<ul class="site-map__ul">
+					<a class="site-map__link" href="#"><li>Men</li></a>
+					<a class="site-map__link" href="#"><li>Women</li></a>
+					<a class="site-map__link" href="#"><li>Child</li></a>
+					<a class="site-map__link" href="#"><li>Apparel</li></a>
+					<a class="site-map__link" href="#"><li>Brows All</li></a>
+				</ul>
+			</nav>
+		</section>
+		<section class="footer center">
+			<p class="footer__p">© 2020 Brand All Rights Reserved.</p>
+			<div class="footer__links">
+				<a href="#"><div class="footer__social"><span class="fab	 fa-facebook-f"></span></div></a>
+				<a href="#"><div class="footer__social"><span class="fab	 fa-twitter"></div></a>
+				<a href="#"><div class="footer__social"><span class="fab	 fa-linkedin-in"></div></a>
+				<a href="#"><div class="footer__social"><span class="fab	 fa-pinterest-p"></div></a>
+				<a href="#"><div class="footer__social"><span class="fab	 fa-google-plus-g"></div></a>
+			</div>
+		</section>
 	</footer>
 
 </body>
