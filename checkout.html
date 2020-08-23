@@ -28,8 +28,8 @@
 	<nav class="nav center">
 		<ul class="menu">
 			<li><a href="./index.html" class="menu__link">Home</a></li>
-			<li><a href="./product.html" class="menu__link">Man</a></li>
-			<li><a href="#" class="menu__active menu__link">Women</a></li>
+			<li><a href="#" class="menu__active menu__link">Man</a></li>
+			<li><a href="./single-page.html" class="menu__link">Women</a></li>
 			<li><a href="#" class="menu__link">Kids</a></li>
 			<li><a href="#" class="menu__link">Accoseriese</a></li>
 			<li><a href="#" class="menu__link">Featured</a></li>
@@ -44,89 +44,94 @@
 			<a href="" class="breadcrumbs__link breadcrumbs__active"> New Arrivals</a>
 		</nav>
 	</section>
-	<section class="single-jumbotron">
-		<button class="single-jumbotron__btn"><i class="fas fa-chevron-left"></i></button>
-		<img src="img/Single-page/Jumbotron-img.png" alt="Single-page">
-		<button class="single-jumbotron__btn"><i class="fas fa-chevron-right"></i></button>
-	</section>
-	<main class="single-main center">
-		<section class="single-product">
-			<h4 class="single__h4 orange-color">WOMEN COLLECTION </h4>
-			<p class="bottom-line"></p>
-			<h3 class="single__h3">Moschino Cheap And Chic</h3>
-			<p class="single__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-			<div class="single__features">
-				<h4 class="single__h4"><span class="single__span">MATERIAL:</span> COTTON</h4>
-				<h4 class="single__h4"><span class="single__span">DESIGNER:</span> BINBURHAN</h4>
-			</div>
-			<h2 class="single__price">$561</h2>
-			<div class="single__params">
-				<div class="single__params__col">
-					<h4 class="h4 single__h4">CHOOSE COLOR</h4>
-					<select class="single__select" name="color" id="color-sel">
-						<option value="red"><i class="fas fa-square-full"></i>Red</option>
-						<option value="blue">Blue</option>
-					</select>
-				</div>
-				<div class="single__params__col">
-					<h4 class="h4 single__h4">CHOOSE SIZE</h4>
-					<select class="single__select" name="size" id="size-sel">
-						<option value="xxl">XXL</option>
-						<option value="xl">XL</option>
-						<option value="l">L</option>
-						<option value="m">M</option>
-						<option value="s">S</option>
-						<option value="xs">XS</option>
-						<option value="xxs">XXS</option>
-					</select>
-				</div>
-				<div class="single__params__col">
-					<h4 class="h4 single__h4">QUANTITY</h4>
-					<input class="single__input" type="number">
+	<main class="accordion center">
+			<div class="accordion__item ">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="address" checked>
+				<label class="accordion__heading-label" for="address">01. Shipping address</label>
+				<div class="accordion__content accordion__big accordion__flex">
+					<div class="accordion__left">
+						<form action="#">
+							<h4 class="accordion__h4">Check as a guest or register</h4>
+							<p class="accordion__p mt">Register with us for future convenience</p>
+							<input name="register-status" type="radio" id="guest">
+							<label class="accordion__label" for="guest">checkout as guest</label>
+							<br>
+							<input name="register-status" type="radio" id="registered">
+							<label class="accordion__label mb" for="registered">register</label>
+							<h4 class="accordion__h4 ">register and save time!</h4>
+							<p class="accordion__p mt mb">Register with us for future convenience</p>
+							<p class="accordion__p"><i class="fas fa-angle-double-right"></i> Fast and easy checkout</p>
+							<p class="accordion__p mt"><i class="fas fa-angle-double-right"></i> Easy access to your order history and status</p>
+							<button class="accordion__button" type="button">Continue</button>
+						</form>
+					</div>
+					<div class="accordion__right">
+						<form action="#">
+							<h4 class="accordion__h4">Already registed?</h4>
+							<p class="accordion__p mt">Please log in below</p>
+							<label class="accordion__label" for="email-address">EMAIL ADDRESS</label>
+							<br>
+							<input class="mt" type="email" id="email-address">
+							<br>
+							<label class="accordion__label" for="password">PASSWORD</label>
+							<br>
+							<input class="mt" type="password" id="password">
+							<h4 class="accordion__p orange-color">* Required Fileds</h4>
+							<button class="accordion__button" type="button">Log In</button>
+							<h4 class="accordion__h4">Forgot Password ?</h4>
+						</form>
+					</div>
 				</div>
 			</div>
-			<button class="single__btn"><i class="fas fa-shopping-cart"></i>Add To Chart</button>
-		</section>
-		<section class="single__products">
-			<h2 class="single__products__h2">you may like also</h2>
-			<div class="products">
-				<div class="products__item">
-					<div class="products__hover">
-						<a href="#"><img src="img/Single-page/single-product-1.png" alt="single-1" class="products__img"></a>
-						<a href="#" class="products__cart-btn"><img src="img/cart-white.png" alt="cart">Add to Cart</a>
-					</div>
-					<a href="#"><p class="products__name">Mango People T-shirt</p></a>
-					<p class="products__price">$52.00</p>
-				</div>
-				<div class="products__item">
-					<div class="products__hover">
-						<a href="#"><img src="img/Single-page/single-product-2.png" alt="single-2" class="products__img"></a>
-						<a href="#" class="products__cart-btn"><img src="img/cart-white.png" alt="cart">Add to Cart</a>
-					</div>
-					<a href="#"><p class="products__name">Mango People T-shirt</p></a>
-					<p class="products__price">$52.00</p>
-				</div>
-				<div class="products__item">
-					<div class="products__hover">
-						<a href="#"><img src="img/Single-page/single-product-3.png" alt="single-3" class="products__img"></a>
-						<a href="#" class="products__cart-btn"><img src="img/cart-white.png" alt="cart">Add to Cart</a>
-					</div>
-					<a href="#"><p class="products__name">Mango People T-shirt</p></a>
-					<p class="products__price">$52.00</p>
-				</div>
-				<div class="products__item">
-					<div class="products__hover">
-						<a href="#"><img src="img/Single-page/single-product-4.png" alt="single-4" class="products__img"></a>
-						<a href="#" class="products__cart-btn"><img src="img/cart-white.png" alt="cart">Add to Cart</a>
-					</div>
-					<a href="#"><p class="products__name">Mango People T-shirt</p></a>
-					<p class="products__price">$52.00</p>
+			<div class="accordion__item">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="billing">
+				<label class="accordion__heading-label" for="billing">02. BILLING INFORMATION</label>
+
+				<div class="accordion__content accordion__medium">
+					<h4>Content Title </h4>
+					<br>
+					<p>Some content.... </p>
 				</div>
 			</div>
-		</section>
+			<div class="accordion__item">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="3">
+				<label class="accordion__heading-label" for="3">03. SHIPPING INFORMATION</label>
+				<div class="accordion__content accordion__medium">
+					<h4>Content Title </h4>
+					<br>
+					<p>Some content.... </p>
+				</div>
+			</div>
+			<div class="accordion__item">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="4">
+				<label class="accordion__heading-label" for="4">04. SHIPPING METHOD</label>
+				<div class="accordion__content accordion__medium">
+					<h4>Content Title </h4>
+					<br>
+					<p>Some content.... </p>
+				</div>
+			</div>
+			<div class="accordion__item">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="5">
+				<label class="accordion__heading-label" for="5">05. PAYMENT METHOD</label>
+				<div class="accordion__content accordion__medium">
+					<h4>Content Title </h4>
+					<br>
+					<p>Some content.... </p>
+				</div>
+			</div>
+			<div class="accordion__item">
+				<input class="accordion__hidden-radio" type="radio" name="accordion" id="6">
+				<label class="accordion__heading-label" for="6">06. ORDER REVIEW</label>
+				<div class="accordion__content accordion__medium">
+					<h4>Content Title </h4>
+					<br>
+					<p>Some content.... </p>
+				</div>
+			</div>
 	</main>
 	<footer>
-		<section class="subscribe center">
+		<section class="subscribe center relative">
 			<div class="comments">
 				<div class="comments__icon"><img src="img/Bin_Burhan.png" alt=""></div>
 				<div class="blockquote">
@@ -143,7 +148,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="site-map center">
+		<section class="site-map center relative">
 			<div class="site-map__company">
 				<a href="" class="logo"><img class="logo__img" src="img/logo.png">BRAN<span class="logo__span">D</span></a>
 				<p class="site-map__p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
