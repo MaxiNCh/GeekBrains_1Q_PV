@@ -53,14 +53,22 @@ input:focus {
   font-size: 14px;
   font-weight: 400;
   color: #222222;
-  text-align: right;
+  /* text-align: right; */
   letter-spacing: 0.03em;
   height: 38px;
   width: 88px;
-  text-align: center;
-  line-height: 38px;
+  /* text-align: center; */
+  /* line-height: 38px; */
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  padding: 10px 11px;
+  position: relative;
+}
+.header__browse:hover {
+  cursor: pointer;
+}
+.header__browse:hover .drop_block {
+  display: block;
 }
 
 .header__browse i {
@@ -81,6 +89,13 @@ input:focus {
   border: none;
   padding: 10px;
   border-right: 1px solid #e6e6e6;
+}
+
+.header__drop {
+  position: relative;
+}
+.header__drop:hover .drop_block {
+  display: block;
 }
 
 .header__cart {
@@ -138,7 +153,9 @@ input:focus {
   outline: none;
 }
 
-.button:hover, button:hover, select:hover {
+.button:hover,
+button:hover,
+select:hover {
   cursor: pointer;
 }
 
@@ -158,6 +175,10 @@ button:focus {
   display: flex;
   justify-content: center;
   list-style: none;
+  position: relative;
+}
+.menu__list:hover .drop_flex {
+  display: flex;
 }
 
 .menu__link {
@@ -170,7 +191,6 @@ button:focus {
   text-transform: uppercase;
   border-bottom: 3px solid #ffffff;
 }
-
 .menu__link:hover {
   color: #ef5b70;
   border-bottom: 3px solid #ef5b70;
@@ -178,6 +198,140 @@ button:focus {
 
 .menu__active {
   border-bottom: 3px solid #ef5b70;
+}
+
+.drop {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  top: 55px;
+}
+.drop__cart {
+  top: 34px;
+  left: -19px;
+}
+.drop::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  position: absolute;
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  top: -7px;
+  left: 30px;
+  background-color: #ffffff;
+}
+.drop_browse {
+  top: 35px;
+  left: 0px;
+  text-align: left;
+}
+.drop_browse::after {
+  left: 64px;
+}
+.drop_sm-pad {
+  padding: 20px 17px;
+}
+.drop__col {
+  width: 234px;
+  position: relative;
+}
+.drop__col:not(:last-child) {
+  margin-right: 45px;
+}
+.drop__row {
+  display: flex;
+  margin-bottom: 34px;
+}
+.drop__row img {
+  margin-right: 20px;
+}
+.drop__row .remove-btn {
+  float: right;
+  color: #c0c0c0;
+  margin-left: 45px;
+}
+.drop__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.drop__btn {
+  display: block;
+  text-align: center;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 800;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: 1px solid #eaeaea;
+  margin-top: 11px;
+}
+.drop__btn:hover {
+  background-color: #eaeaea;
+  border: 1px solid #000000;
+}
+.drop__btn_orange {
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+.drop__btn_orange:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+  border: 1px solid #f16d7f;
+}
+.drop__img {
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+}
+.drop__h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+}
+.drop__h3 {
+  font-size: 14px;
+  color: #232323;
+  line-height: 20px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 9px;
+}
+.drop__h3:not(:first-child) {
+  margin-top: 18px;
+}
+.drop__h4 {
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+}
+.drop__cart-p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f16d7f;
+}
+.drop__ul {
+  list-style-type: none;
+}
+.drop__link {
+  font-size: 14px;
+  color: #646464;
+  line-height: 28px;
+}
+.drop__link:hover {
+  text-decoration: underline;
 }
 
 .breadcrumbs {
@@ -440,6 +594,9 @@ img[alt=Featured_item_8] {
   letter-spacing: 0.03em;
   height: 48px;
   line-height: 48px;
+}
+.featured__button:hover {
+  opacity: 0.8;
 }
 
 .featured__button i {
@@ -716,7 +873,8 @@ i.fa-caret-up {
   margin-bottom: 48px;
 }
 
-.products__sort__p, .products__sort__sel {
+.products__sort__p,
+.products__sort__sel {
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   height: 30px;
@@ -734,8 +892,8 @@ i.fa-caret-up {
   padding: 0 10px 0 10px;
   background-image: #fff;
   /* 	appearance: none;
-  	background: #ffffff url("img/Product/caret-down-solid.svg") right/50% 50% no-repeat;
-   */
+  background: #ffffff url("img/Product/caret-down-solid.svg") right/50% 50% no-repeat;
+  */
 }
 
 .products__pages {
@@ -968,7 +1126,8 @@ i.fa-caret-up {
   text-align: left;
 }
 
-.single__select, .single__input {
+.single__select,
+.single__input {
   border: 1px solid #eaeaea;
   font-size: 13px;
   color: #bcbcbc;
@@ -999,8 +1158,8 @@ i.fa-caret-up {
   height: 55px;
   width: 572px;
   /* 	display: flex;
-  	justify-content: center;
-  	align-items: center; */
+  justify-content: center;
+  align-items: center; */
 }
 
 .single__btn i {
@@ -1028,8 +1187,10 @@ i.fa-caret-up {
   margin-bottom: 72px;
 }
 
-img[alt=single-1], img[alt=single-3],
-img[alt=single-2], img[alt=single-4] {
+img[alt=single-1],
+img[alt=single-3],
+img[alt=single-2],
+img[alt=single-4] {
   background: #e9e9e9;
 }
 
@@ -1149,16 +1310,6 @@ img[alt=single-2], img[alt=single-4] {
   line-height: 20px;
   font-weight: 600;
 }
-.cart__row > button {
-  border: none;
-  background-color: #ffffff;
-  color: #656565;
-  transition: all 0.5s;
-}
-.cart__row > button:hover {
-  color: red;
-  transform: scale(1.5);
-}
 .cart__item {
   display: flex;
   flex: 0 0 400px;
@@ -1190,6 +1341,9 @@ img[alt=single-2], img[alt=single-4] {
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+}
+.cart__button a {
+  color: #ffffff;
 }
 .cart__button_bg {
   font-size: 14px;
@@ -1269,12 +1423,14 @@ img[alt=single-2], img[alt=single-4] {
   font-size: 13px;
   line-height: 13px;
 }
-.cart__total .cart__p, .cart__total .cart__h3 {
+.cart__total .cart__p,
+.cart__total .cart__h3 {
   display: inline-block;
   width: calc(100% - 80px);
   text-align: right;
 }
-.cart__total .cart__p span, .cart__total .cart__h3 span {
+.cart__total .cart__p span,
+.cart__total .cart__h3 span {
   margin-left: 15px;
 }
 .cart__total .cart__h3 {
@@ -1305,6 +1461,17 @@ img[alt=single-2], img[alt=single-4] {
 }
 .cart__total button:hover:before {
   opacity: 1;
+}
+
+.remove-btn {
+  border: none;
+  background-color: #ffffff;
+  color: #656565;
+  transition: all 0.5s;
+}
+.remove-btn:hover {
+  color: red;
+  transform: scale(1.5);
 }
 
 .accordion__hidden-radio {
